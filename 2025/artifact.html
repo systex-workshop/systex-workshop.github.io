@@ -51,25 +51,83 @@
       <div class="row">
         <div class="col-sm-12">
           <h3>Important dates</h3>
-          <p>Coming soon</p>
+          <p>All deadlines are <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere on Earth (AoE = UTC-12h)</a>.</p>
         </div>
       </div>
-
+        
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 text-left">
+          <div class="table-responsive-sm">
+            <table class="table table-hover table-condensed">
+              <tbody>
+                <tr class="warning">
+                  <td><i class="bi bi-alarm" style="font-size: 2em;"></i></td>
+                  <td>May 7, 2025 (23:59 AoE)</td>
+                  <td>Artifact submission</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-check-circle" style="font-size: 2em;"></i></td>
+                  <td>May 27, 2025</td>
+                  <td>Final artifact evaluation badges</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-easel" style="font-size: 2em;"></i></td>
+                  <td>July 4, 2025</td>
+                  <td>Workshop</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    
       <div class="row">
         <div class="col-sm-12">
           <h3>Artifact Evaluation</h3>
           <p>
-          SysTEX this year also, includes an <em>optional</em> artifact evaluation phase for accepted papers, inspired by similar <a href="https://secartifacts.github.io/">efforts</a> in the security and systems communities.
+            After <a href="https://secartifacts.github.io/systex2024/results">last year's success</a>, SysTEX'25 again includes an <em>optional</em> artifact evaluation phase for accepted papers, inspired by similar efforts in the <a href="https://secartifacts.github.io/">security</a> and <a href="https://sysartifacts.github.io/">systems</a> communities.
           </p>
 
           <p>
           The artifact evaluation is carried out by a dedicated volunteer <a href="committee.html">artifact evaluation committee</a> (AEC). The explicit focus is on providing constructive feedback and cooperatively improving the quality and reproducibility of any code or data research artifacts.
-          This initiative aims to add an optional "artifacts evaluated" badge on the website, linking to the corresponding open-source repository. The presence of this badge will not only acknowledge the commitment to open science by the authors but also enhance the visibility of these efforts.
+          This initiative aims to add optional "artifacts evaluated" badges on the SysTEX'25 and <a href="https://secartifacts.github.io">secartifacts.github.io</a> websites, linking to the corresponding open-source repository. The presence of this badge will not only acknowledge the commitment to open science by the authors but also enhance the visibility of these efforts.
           </p>
 
           <h3>Submission Instructions</h3>
-          <p>Coming soon</p>
 
+          <p>Authors of accepted paper who wish to take part in the optional
+            artifact evaluation should register their artifact by the deadline
+            <b>May 7, 2025 (23:59 AoE)</b> via
+            <a href="https://systex25-artifacts.hotcrp.com/">https://systex25-artifacts.hotcrp.com/</a>.
+            </p>
+          
+            <p>
+            Submissions should include:
+            </p>
+            <ol>
+              <li> the (non-anonymous) camera-ready PDF of the accepted paper; </li>
+              <li> a clear, stable URL pointing to the public (non-anonymous) artifact;</li>
+              <li> which badges you want your artifact to be considered for (cf. section below: Available, Functional, Reusable). Assignment of final badges is at the discretion of the AEC after reviewing. </li>
+            </ol>
+          
+            <p>
+            Any documentation and building/running instructions should be
+            self-contained in the artifact (e.g., via a README file).
+            In case custom hardware (e.g., Intel SGX, ARM TrustZone, etc.) is
+            required, this should be clearly documented in the artifact itself.
+            Authors may choose to <em>optionally</em> provide remote access to an
+            evaluation machine with the required hardware for the artifact
+            reviewers. In this case, login information may be privately shared via
+            hotcrp comments.
+            </p>
+          
+                 <p>
+                 The evaluation will be <em>single-blind</em>, i.e., only the identity
+                 of the reviewers is hidden but the paper and artifact should
+                 <em>not</em> be anonymous.
+                 </p>
+          
 
           <h3>Badges</h3>
 
@@ -97,7 +155,10 @@
               <img alt="Artifact Evaluated: Reusable" style="margin:2px" src="img/systexbadges-reusable.svg">
             </li>
           </ol>
-
+          <p>
+            <b>Note:</b>
+            As this is a young initiative, and to keep the reviewing load manageable, verifying full reproducibility as per ACM's strict <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">definition</a> is put explicitly out of scope this year. The "Artifacts Reusable" badge is intended to recognize those artifacts that go significantly beyond minimal expectations.
+            </p>
           <br>
           <br>
         </div>
