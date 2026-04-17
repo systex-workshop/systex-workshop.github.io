@@ -74,7 +74,7 @@
   },
   {
     "type": "subtheme",
-    "title": "Confidential VMs"
+    "title": "TEE Performance"
   },
   {
     "type": "paper",
@@ -88,10 +88,10 @@
   {
     "type": "paper",
     "time": "12:00 – 12:20",
-    "title": "ARDECK: Architecture for Disk Encryption and Confidential Kernels on Intel TDX",
+    "title": "Performance and Security of TEE-Based Threshold Cryptography",
     "duration": "15 + 5 min",
-    "authors": "Julian Funk (Friedrich-Alexander-Universität Erlangen-Nürnberg), Matti Schulze (Friedrich-Alexander-Universität Erlangen-Nürnberg), Patrick Sieber (Friedrich-Alexander-Universität Erlangen-Nürnberg), Manuel Vögele (Ruhr University Bochum), Jonas Röckl (Friedrich-Alexander-Universität Erlangen-Nürnberg), Tilo Müller (Hof University of Applied Sciences)",
-    "pdf": "papers/systex26-paper22.pdf",
+    "authors": "Marius Haller (Karlsruhe Institute of Technology (KIT)), Marc Leinweber (Karlsruhe Institute of Technology (KIT)), Tilo Spannagel (Karlsruhe Institute of Technology (KIT)), Markus Raiber (Karlsruhe Institute of Technology (KIT)), Hannes Hartenstein (Karlsruhe Institute of Technology (KIT))",
+    "pdf": "papers/systex26-paper9.pdf",
     "format": "regular"
   },
   {
@@ -160,20 +160,11 @@
   },
   {
     "type": "subtheme",
-    "title": "Crypto & Certification"
+    "title": "Trust & Certification"
   },
   {
     "type": "paper",
     "time": "16:00 – 16:20",
-    "title": "Performance and Security of TEE-Based Threshold Cryptography",
-    "duration": "15 + 5 min",
-    "authors": "Marius Haller (Karlsruhe Institute of Technology (KIT)), Marc Leinweber (Karlsruhe Institute of Technology (KIT)), Tilo Spannagel (Karlsruhe Institute of Technology (KIT)), Markus Raiber (Karlsruhe Institute of Technology (KIT)), Hannes Hartenstein (Karlsruhe Institute of Technology (KIT))",
-    "pdf": "papers/systex26-paper9.pdf",
-    "format": "regular"
-  },
-  {
-    "type": "paper",
-    "time": "16:20 – 16:40",
     "title": "CACTEE: Confidential Asset Certification using Trusted Execution Environments",
     "duration": "15 + 5 min",
     "authors": "Istemi Ekin Akkus (Nokia Bell Labs), Ivica Rimac (Nokia Bell Labs)",
@@ -186,7 +177,7 @@
   },
   {
     "type": "paper",
-    "time": "16:40 – 17:00",
+    "time": "16:20 – 16:40",
     "title": "Epsilon: A Bring-Your-Own-Data Research Platform with Trusted Verification",
     "duration": "15 + 5 min",
     "authors": "Khajiev Nizomjon (Action Lab, Monash University), Aare Puussaar (Action Lab, Monash University), Chu Lee Shen (Action Lab, Monash University Malaysia), Patrick Olivier (Action Lab, Monash University), Lay-Ki Soon (Action Lab, Monash University Malaysia), Delvin Varghese (Action Lab, Monash University)",
@@ -195,7 +186,7 @@
   },
   {
     "type": "paper",
-    "time": "17:00 – 17:10",
+    "time": "16:40 – 16:50",
     "title": "AI Agents Need Both Hardware-Backed Security and Application-Level Guardrails",
     "duration": "10 min",
     "authors": "Shichen Hu (Technical University of Munich), Quoc Do Le (Huawei Research)",
@@ -204,7 +195,7 @@
   },
   {
     "type": "event",
-    "time": "17:10 – 17:30",
+    "time": "16:50 – 17:10",
     "title": "Open Discussion & Closing Remarks"
   },
   {
