@@ -56,6 +56,15 @@
     </div>
 
   <style>
+    /* Tab styling */
+    .program-tabs { margin-bottom: 0; }
+    .program-tabs > li > a { color: #555; border-radius: 4px 4px 0 0; }
+    .program-tabs > li.active > a,
+    .program-tabs > li.active > a:hover,
+    .program-tabs > li.active > a:focus { color: #1a3a5c; font-weight: bold; }
+    .tab-content { padding-top: 20px; }
+
+    /* Program table */
     .program-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
     .program-table td { padding: 8px 12px; vertical-align: top; border-bottom: 1px solid #eee; }
     .program-table .time-col { width: 130px; white-space: nowrap; font-weight: bold; color: #555; }
@@ -63,7 +72,7 @@
     .row-session td { background: #CFE2F3; font-weight: bold; font-size: 1.05em; border-bottom: 2px solid #9bc; }
     .row-break td { background: #f0f0f0; font-style: italic; color: #777; }
     .row-keynote td { background: #F4CCCC; }
-    .row-subtheme td { background: #d6e8eb; font-style: italic; color: #3a7a85; font-size: 0.92em; }
+    .row-subtheme td { background: #f0f0f0; font-style: italic; color: #666; font-size: 0.92em; }
     .row-event td { background: #fafafa; }
 
     .paper-title { font-weight: 600; }
@@ -71,78 +80,67 @@
     .paper-title a:hover { color: #0066cc; text-decoration: underline; }
     .paper-authors { font-style: italic; color: #666; font-size: 0.9em; margin-top: 2px; }
     .badge-short { display: inline-block; font-size: 0.75em; padding: 1px 7px; border-radius: 3px;
-                   background: #FCE5CD; color: #b45309; margin-left: 6px; font-weight: normal; vertical-align: middle; }
+                   background: #e0e0e0; color: #555; margin-left: 6px; font-weight: normal; vertical-align: middle; }
     .badge-tool  { display: inline-block; font-size: 0.75em; padding: 1px 7px; border-radius: 3px;
-                   background: #D9EAD3; color: #2e7d32; margin-left: 6px; font-weight: normal; vertical-align: middle; }
+                   background: #e0e0e0; color: #555; margin-left: 6px; font-weight: normal; vertical-align: middle; }
+
+    /* PDF embed */
+    .pdf-wrapper { width: 100%; height: 80vh; border: 1px solid #ddd; border-radius: 4px; }
+
+    /* Accepted papers table */
+    .accepted-table .paper-format { font-style: italic; color: #888; font-size: 0.85em; }
   </style>
 
   <div class="container">
-    <h3>Accepted papers</h3>
-  
-  <table class="table table-striped">
-  <thead>
-    <tr>
-     
-      <th scope="col">Paper Title</th>
-      <th scope="col">Authors</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b> Performance and Security of TEE-Based Threshold Cryptography </b> </td>
-      <td>Marius Haller, Marc Leinweber, Tilo Spannagel, Markus Raiber, Hannes Hartenstein (Karlsruhe Institute of Technology (KIT))</td>
-    </tr>
-    <tr>
-      <td><b>AI Agents Need Both Hardware-Backed Security and Application-Level Guardrails </b> </br> <i>Research statement</i></td>
-      <td>Shichen Hu (Technical University of Munich); Quoc Do Le (Huawei Research)</td>
-    </tr>
-    <tr>
-      <td><b>StepOverflow: PMC Overflows on AMD SEV</b></td>
-      <td>Anja Rabich, Jonah Heller, Florian Sieck, Thomas Eisenbarth (University of Luebeck)</td>
-    </tr>
-    <tr>
-      <td><b>On Attestation Dilution</b>
-        </br><i>Research statement</i></td>
-      <td>Charly Castes (EPFL)</td>
-    </tr>
-      <tr>
-      <td><b>Breaking Isolation: Last-level Cache Side-Channel Attacks on AWS Nitro Enclaves</b></td>
-      <td>Monder Rammouz (TU Munich); Quoc Do Le (Huawei Munich Research Center)</td>
-    </tr>
-      <tr>
-      <td><b>Optimizing Launch Latency for Confidential VMs with Device Passthrough in the Linux KVM Hypervisor</b></td>
-      <td>Hao-Jung Wei, Shih-Wei Li (National Taiwan University)</td>
-    </tr>
-      <tr>
-      <td><b>Trusted and Transparent Time-Stamping Through TEEs and Network Time Security</b></td>
-      <td>Tobias Nießen (TU Wien); Andrew Paverd (Microsoft Security Response Center)</td>
-    </tr>
-      <tr>
-      <td><b>Mind the Gap: Where TEE Attestations Fall Short and Why We Need Proof of Cloud</b>
-         </br><i>Research statement</i>
-      </td>
-      <td>Filip Rezabek (Technical University of Munich); Jonathan Passerat-Palmbach (Flashbots)</td>
-    </tr>
-      <tr>
-      <td><b>Epsilon: A Bring-Your-Own-Data Research Platform with Trusted Verification</b></td>
-      <td>Khajiev Nizomjon, Aare Puussaar (Action Lab, Monash University); Chu Lee Shen (Action Lab, Monash University Malaysia); Patrick Olivier (Action Lab, Monash University); Lay-Ki Soon (Action Lab, Monash University Malaysia); Delvin Varghese (Action Lab, Monash University)</td>
-    </tr>
-      <tr>
-      <td><b>CACTEE: Confidential Asset Certification using Trusted Execution Environments</b></td>
-      <td>Istemi Ekin Akkus, Ivica Rimac (Nokia Bell Labs)</td>
-    </tr>
-      <tr>
-      <td><b>Keystone with Linux PREEMPT_RT: Real-Time Enclaves on RISC-V?</b></td>
-      <td>Oscar Van Slijpe, Jean-Michel Dricot, Jan Tobias Mühlberg (Université Libre de Bruxelles)</td>
-    </tr>
-      <tr>
-      <td><b>Control-Flow Balancing for Texas Instruments IPE</b></td>
-      <td>Marton Bognar, Alexander Croes, Hans Winderix, Jo Van Bulck (DistriNet, KU Leuven)</td>
-    </tr>
-     
-  </tbody>
-</table>
+    <h3>Program</h3>
 
+    <ul class="nav nav-tabs program-tabs" role="tablist">
+      <li role="presentation" class="active">
+        <a href="#schedule" aria-controls="schedule" role="tab" data-toggle="tab">Schedule</a>
+      </li>
+      <li role="presentation">
+        <a href="#pdf" aria-controls="pdf" role="tab" data-toggle="tab">Schedule (PDF)</a>
+      </li>
+      <li role="presentation">
+        <a href="#accepted" aria-controls="accepted" role="tab" data-toggle="tab">Accepted Papers</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+
+      <!-- Tab 1: Schedule -->
+      <div role="tabpanel" class="tab-pane active" id="schedule">
+        <div class="table-responsive">
+          <table class="program-table" id="program-table">
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: PDF -->
+      <div role="tabpanel" class="tab-pane" id="pdf">
+        <p><a href="program.pdf" class="btn btn-default btn-sm">Download PDF</a></p>
+        <iframe class="pdf-wrapper" src="program.pdf" type="application/pdf">
+          Your browser does not support embedded PDFs. <a href="program.pdf">Download the program PDF</a>.
+        </iframe>
+      </div>
+
+      <!-- Tab 3: Accepted Papers -->
+      <div role="tabpanel" class="tab-pane" id="accepted">
+        <div class="table-responsive">
+          <table class="table table-striped accepted-table" id="accepted-table">
+            <thead>
+              <tr>
+                <th>Paper Title</th>
+                <th>Authors</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -154,6 +152,8 @@
   <script>
   (function() {
       var data = PROGRAM_DATA;
+
+      // --- Tab 1: Build schedule table ---
       var tbody = document.querySelector('#program-table tbody');
 
       data.forEach(function(item) {
@@ -204,6 +204,21 @@
         }
 
         tbody.appendChild(tr);
+      });
+
+      // --- Tab 3: Build accepted papers table ---
+      var atbody = document.querySelector('#accepted-table tbody');
+      var formatLabels = { regular: '', short: 'Research Statement', tool: 'Tool Paper' };
+
+      data.forEach(function(item) {
+        if (item.type !== 'paper') return;
+        var tr = document.createElement('tr');
+        var titleHtml = '<b>' + item.title + '</b>';
+        if (item.format && item.format !== 'regular') {
+          titleHtml += '<br><span class="paper-format">' + formatLabels[item.format] + '</span>';
+        }
+        tr.innerHTML = '<td>' + titleHtml + '</td><td>' + (item.authors || '') + '</td>';
+        atbody.appendChild(tr);
       });
   })();
   </script>
