@@ -1,0 +1,215 @@
+var PROGRAM_DATA = [
+  {
+    "type": "session",
+    "time": "9:00 – 10:30",
+    "title": "Session 1: Attacks on TEEs"
+  },
+  {
+    "type": "event",
+    "time": "09:00 – 09:10",
+    "title": "Opening and Welcome"
+  },
+  {
+    "type": "keynote",
+    "time": "09:10 – 09:50",
+    "title": "Keynote 1",
+    "duration": "30 + 10 min",
+    "speaker": "TBA",
+    "abstract": "",
+    "bio": ""
+  },
+  {
+    "type": "subtheme",
+    "title": "Attacks"
+  },
+  {
+    "type": "paper",
+    "time": "09:50 – 10:10",
+    "title": "StepOverflow: PMC Overflows on AMD SEV",
+    "duration": "15 + 5 min",
+    "authors": "Anja Rabich (University of Luebeck), Jonah Heller (University of Luebeck), Florian Sieck (University of Luebeck), Thomas Eisenbarth (University of Luebeck)",
+    "pdf": "papers/systex26-paper16.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "paper",
+    "time": "10:10 – 10:30",
+    "title": "Breaking Isolation: Last-level Cache Side-Channel Attacks on AWS Nitro Enclaves",
+    "duration": "15 + 5 min",
+    "authors": "Monder Rammouz (TU Munich), Quoc Do Le (Huawei Munich Research Center)",
+    "pdf": "papers/systex26-paper47.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "break",
+    "time": "10:30 – 11:00",
+    "title": "Coffee Break"
+  },
+  {
+    "type": "session",
+    "time": "11:00 – 12:30",
+    "title": "Session 2: TEE Platforms & Systems"
+  },
+  {
+    "type": "subtheme",
+    "title": "Embedded TEEs"
+  },
+  {
+    "type": "paper",
+    "time": "11:00 – 11:20",
+    "title": "Control-Flow Balancing for Texas Instruments IPE",
+    "duration": "15 + 5 min",
+    "authors": "Marton Bognar (DistriNet, KU Leuven), Alexander Croes (DistriNet, KU Leuven), Hans Winderix (DistriNet, KU Leuven), Jo Van Bulck (DistriNet, KU Leuven)",
+    "pdf": "papers/systex26-paper99.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "paper",
+    "time": "11:20 – 11:40",
+    "title": "Keystone with Linux PREEMPT_RT: Real-Time Enclaves on RISC-V?",
+    "duration": "15 + 5 min",
+    "authors": "Oscar Van Slijpe (Université Libre de Buxelles), Jean-Michel Dricot (Université libre de Bruxelles), Jan Tobias Mühlberg (Université libre de Bruxelles)",
+    "pdf": "papers/systex26-paper82.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "subtheme",
+    "title": "Confidential VMs"
+  },
+  {
+    "type": "paper",
+    "time": "11:40 – 12:00",
+    "title": "Optimizing Launch Latency for Confidential VMs with Device Passthrough in the Linux KVM Hypervisor",
+    "duration": "15 + 5 min",
+    "authors": "Hao-Jung Wei (National Taiwan University), Shih-Wei Li (National Taiwan University)",
+    "pdf": "papers/systex26-paper50.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "paper",
+    "time": "12:00 – 12:20",
+    "title": "ARDECK: Architecture for Disk Encryption and Confidential Kernels on Intel TDX",
+    "duration": "15 + 5 min",
+    "authors": "Julian Funk (Friedrich-Alexander-Universität Erlangen-Nürnberg), Matti Schulze (Friedrich-Alexander-Universität Erlangen-Nürnberg), Patrick Sieber (Friedrich-Alexander-Universität Erlangen-Nürnberg), Manuel Vögele (Ruhr University Bochum), Jonas Röckl (Friedrich-Alexander-Universität Erlangen-Nürnberg), Tilo Müller (Hof University of Applied Sciences)",
+    "pdf": "papers/systex26-paper22.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "break",
+    "time": "12:30 – 14:00",
+    "title": "Lunch Break"
+  },
+  {
+    "type": "session",
+    "time": "14:00 – 15:30",
+    "title": "Session 3: Attestation & Trust"
+  },
+  {
+    "type": "keynote",
+    "time": "14:00 – 14:40",
+    "title": "Keynote 2",
+    "duration": "30 + 10 min",
+    "speaker": "TBA",
+    "abstract": "",
+    "bio": ""
+  },
+  {
+    "type": "subtheme",
+    "title": "Attestation"
+  },
+  {
+    "type": "paper",
+    "time": "14:40 – 14:50",
+    "title": "On Attestation Dilution",
+    "duration": "10 min",
+    "authors": "Charly Castes (EPFL)",
+    "pdf": "papers/systex26-paper24.pdf",
+    "format": "short"
+  },
+  {
+    "type": "paper",
+    "time": "14:50 – 15:00",
+    "title": "Mind the Gap: Where TEE Attestations Fall Short and Why We Need Proof of Cloud",
+    "duration": "10 min",
+    "authors": "Filip Rezabek (Technical University of Munich), Jonathan Passerat-Palmbach (Flashbots)",
+    "pdf": "papers/systex26-paper66.pdf",
+    "format": "short"
+  },
+  {
+    "type": "subtheme",
+    "title": "Trusted Services"
+  },
+  {
+    "type": "paper",
+    "time": "15:00 – 15:20",
+    "title": "Trusted and Transparent Time-Stamping Through TEEs and Network Time Security",
+    "duration": "15 + 5 min",
+    "authors": "Tobias Nießen (TU Wien), Andrew Paverd (Microsoft Security Response Center)",
+    "pdf": "papers/systex26-paper56.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "break",
+    "time": "15:30 – 16:00",
+    "title": "Coffee Break"
+  },
+  {
+    "type": "session",
+    "time": "16:00 – 17:30",
+    "title": "Session 4: TEE Applications"
+  },
+  {
+    "type": "subtheme",
+    "title": "Crypto & Certification"
+  },
+  {
+    "type": "paper",
+    "time": "16:00 – 16:20",
+    "title": "Performance and Security of TEE-Based Threshold Cryptography",
+    "duration": "15 + 5 min",
+    "authors": "Marius Haller (Karlsruhe Institute of Technology (KIT)), Marc Leinweber (Karlsruhe Institute of Technology (KIT)), Tilo Spannagel (Karlsruhe Institute of Technology (KIT)), Markus Raiber (Karlsruhe Institute of Technology (KIT)), Hannes Hartenstein (Karlsruhe Institute of Technology (KIT))",
+    "pdf": "papers/systex26-paper9.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "paper",
+    "time": "16:20 – 16:40",
+    "title": "CACTEE: Confidential Asset Certification using Trusted Execution Environments",
+    "duration": "15 + 5 min",
+    "authors": "Istemi Ekin Akkus (Nokia Bell Labs), Ivica Rimac (Nokia Bell Labs)",
+    "pdf": "papers/systex26-paper77.pdf",
+    "format": "regular"
+  },
+  {
+    "type": "subtheme",
+    "title": "Platforms & AI"
+  },
+  {
+    "type": "paper",
+    "time": "16:40 – 17:00",
+    "title": "Epsilon: A Bring-Your-Own-Data Research Platform with Trusted Verification",
+    "duration": "15 + 5 min",
+    "authors": "Khajiev Nizomjon (Action Lab, Monash University), Aare Puussaar (Action Lab, Monash University), Chu Lee Shen (Action Lab, Monash University Malaysia), Patrick Olivier (Action Lab, Monash University), Lay-Ki Soon (Action Lab, Monash University Malaysia), Delvin Varghese (Action Lab, Monash University)",
+    "pdf": "papers/systex26-paper67.pdf",
+    "format": "tool"
+  },
+  {
+    "type": "paper",
+    "time": "17:00 – 17:10",
+    "title": "AI Agents Need Both Hardware-Backed Security and Application-Level Guardrails",
+    "duration": "10 min",
+    "authors": "Shichen Hu (Technical University of Munich), Quoc Do Le (Huawei Research)",
+    "pdf": "papers/systex26-paper10.pdf",
+    "format": "short"
+  },
+  {
+    "type": "event",
+    "time": "17:10 – 17:30",
+    "title": "Open Discussion & Closing Remarks"
+  },
+  {
+    "type": "break",
+    "time": "17:30 – 19:30",
+    "title": "Welcome Reception"
+  }
+];
