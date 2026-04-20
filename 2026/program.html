@@ -66,7 +66,7 @@
 
     /* Program table */
     .program-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
-    .program-table td { padding: 8px 12px; vertical-align: top; border-bottom: 1px solid #eee; }
+    .program-table td { padding: 8px 12px; vertical-align: top; border-bottom: 1px solid #bbb; }
     .program-table .time-col { width: 130px; white-space: nowrap; font-weight: bold; color: #555; }
 
     .row-session td { background: #CFE2F3; font-weight: bold; font-size: 1.05em; border-bottom: 2px solid #9bc; }
@@ -202,6 +202,15 @@
           var html = '<td class="time-col">' + (item.time || '') + '</td><td>';
           html += '<span class="paper-title">' + link + '</span>' + badge;
           if (item.authors) html += '<div class="paper-authors">' + item.authors + '</div>';
+          if (item.artifact_badges && item.artifact_badges.length > 0) {
+            html += '<div style="margin-top:4px;">';
+            var badgeNames = { Available: 'available', Functional: 'functional', Reusable: 'reusable' };
+            item.artifact_badges.forEach(function(b) {
+              var href = item.artifact_url || '#';
+              html += '<a href="' + href + '"><img alt="Artifact Evaluated: ' + b + '" style="margin:2px" height="18" src="../img/systexbadges-' + badgeNames[b] + '.svg"></a>';
+            });
+            html += '</div>';
+          }
           html += '</td>';
           tr.innerHTML = html;
         }

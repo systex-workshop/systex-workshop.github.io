@@ -29,7 +29,12 @@ var PROGRAM_DATA = [
     "duration": "15 + 5 min",
     "authors": "Anja Rabich (University of Luebeck), Jonah Heller (University of Luebeck), Florian Sieck (University of Luebeck), Thomas Eisenbarth (University of Luebeck)",
     "pdf": "papers/systex26-paper16.pdf",
-    "format": "regular"
+    "format": "regular",
+    "artifact_url": "https://github.com/UzL-ITS/StepOverflow",
+    "artifact_badges": [
+      "Available",
+      "Reusable"
+    ]
   },
   {
     "type": "paper",
@@ -38,7 +43,12 @@ var PROGRAM_DATA = [
     "duration": "15 + 5 min",
     "authors": "Monder Rammouz (TU Munich), Quoc Do Le (Huawei Munich Research Center)",
     "pdf": "papers/systex26-paper47.pdf",
-    "format": "regular"
+    "format": "regular",
+    "artifact_url": "https://codeberg.org/monder/LLCEnclave.git",
+    "artifact_badges": [
+      "Available",
+      "Reusable"
+    ]
   },
   {
     "type": "break",
@@ -61,7 +71,12 @@ var PROGRAM_DATA = [
     "duration": "15 + 5 min",
     "authors": "Marton Bognar (DistriNet, KU Leuven), Alexander Croes (DistriNet, KU Leuven), Hans Winderix (DistriNet, KU Leuven), Jo Van Bulck (DistriNet, KU Leuven)",
     "pdf": "papers/systex26-paper99.pdf",
-    "format": "regular"
+    "format": "regular",
+    "artifact_url": "https://github.com/martonbognar/ipe-balancing",
+    "artifact_badges": [
+      "Available",
+      "Reusable"
+    ]
   },
   {
     "type": "paper",
@@ -70,7 +85,12 @@ var PROGRAM_DATA = [
     "duration": "15 + 5 min",
     "authors": "Oscar Van Slijpe (Université Libre de Buxelles), Jean-Michel Dricot (Université libre de Bruxelles), Jan Tobias Mühlberg (Université libre de Bruxelles)",
     "pdf": "papers/systex26-paper82.pdf",
-    "format": "regular"
+    "format": "regular",
+    "artifact_url": "https://github.com/ReSP-Lab/2026-systex-keystone-rt-linux/tree/artifact-submission-version",
+    "artifact_badges": [
+      "Available",
+      "Reusable"
+    ]
   },
   {
     "type": "subtheme",
@@ -83,7 +103,12 @@ var PROGRAM_DATA = [
     "duration": "15 + 5 min",
     "authors": "Hao-Jung Wei (National Taiwan University), Shih-Wei Li (National Taiwan University)",
     "pdf": "papers/systex26-paper50.pdf",
-    "format": "regular"
+    "format": "regular",
+    "artifact_url": "https://github.com/ntu-ssl/start-up-optimization",
+    "artifact_badges": [
+      "Available",
+      "Functional"
+    ]
   },
   {
     "type": "paper",
@@ -169,7 +194,12 @@ var PROGRAM_DATA = [
     "duration": "15 + 5 min",
     "authors": "Istemi Ekin Akkus (Nokia Bell Labs), Ivica Rimac (Nokia Bell Labs)",
     "pdf": "papers/systex26-paper77.pdf",
-    "format": "regular"
+    "format": "regular",
+    "artifact_url": "https://github.com/Nokia-Bell-Labs/confidential-asset-certification-using-tees",
+    "artifact_badges": [
+      "Available",
+      "Reusable"
+    ]
   },
   {
     "type": "subtheme",
@@ -182,7 +212,12 @@ var PROGRAM_DATA = [
     "duration": "15 + 5 min",
     "authors": "Khajiev Nizomjon (Action Lab, Monash University), Aare Puussaar (Action Lab, Monash University), Chu Lee Shen (Action Lab, Monash University Malaysia), Patrick Olivier (Action Lab, Monash University), Lay-Ki Soon (Action Lab, Monash University Malaysia), Delvin Varghese (Action Lab, Monash University)",
     "pdf": "papers/systex26-paper67.pdf",
-    "format": "tool"
+    "format": "tool",
+    "artifact_url": "https://github.com/Epsilon-Data/epsilon",
+    "artifact_badges": [
+      "Available",
+      "Reusable"
+    ]
   },
   {
     "type": "paper",
@@ -191,7 +226,12 @@ var PROGRAM_DATA = [
     "duration": "10 min",
     "authors": "Shichen Hu (Technical University of Munich), Quoc Do Le (Huawei Research)",
     "pdf": "papers/systex26-paper10.pdf",
-    "format": "short"
+    "format": "short",
+    "artifact_url": "https://codeberg.org/BarryShichenHu/Secure_AI_Agent/src/tag/artifact-evaluation",
+    "artifact_badges": [
+      "Available",
+      "Reusable"
+    ]
   },
   {
     "type": "event",

@@ -119,9 +119,17 @@ for item in data:
             tag = '<font color="#555555">[Tool] </font>'
 
         authors = item.get("authors", "")
+        artifact_badges = item.get("artifact_badges", [])
         cell_content = f"{tag}{title}"
         if authors:
             cell_content += f"<br/><font size=7 color='#555555'><i>{authors}</i></font>"
+        if artifact_badges:
+            badge_parts = []
+            badge_colors = {"Available": "#97ca00", "Functional": "#007ec6", "Reusable": "#555555"}
+            for b in artifact_badges:
+                c = badge_colors.get(b, "#555555")
+                badge_parts.append(f"<font color='{c}'>✓ {b}</font>")
+            cell_content += f"<br/><font size=6.5><b>Artifact: {'  ·  '.join(badge_parts)}</b></font>"
 
         bg = PAPER_BG
         table_data.append([
