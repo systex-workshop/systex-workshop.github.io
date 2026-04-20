@@ -210,7 +210,8 @@
               Reusable: '../img/artifacts_evaluated_reusable_v1_1.png'
             };
             item.artifact_badges.forEach(function(b) {
-              html += '<img alt="Artifact Evaluated: ' + b + '" style="margin:2px" height="50" src="' + badgeImgs[b] + '">';
+              var href = item.artifact_url || '#';
+              html += '<a href="' + href + '"><img alt="Artifact Evaluated: ' + b + '" style="margin:2px" height="50" src="' + badgeImgs[b] + '"></a>';
             });
             html += '</div>';
           }
