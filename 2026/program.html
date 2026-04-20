@@ -204,10 +204,13 @@
           if (item.authors) html += '<div class="paper-authors">' + item.authors + '</div>';
           if (item.artifact_badges && item.artifact_badges.length > 0) {
             html += '<div style="margin-top:4px;">';
-            var badgeNames = { Available: 'available', Functional: 'functional', Reusable: 'reusable' };
+            var badgeImgs = {
+              Available: '../img/artifacts_available_v1_1.png',
+              Functional: '../img/artifacts_evaluated_functional_v1_1.png',
+              Reusable: '../img/artifacts_evaluated_reusable_v1_1.png'
+            };
             item.artifact_badges.forEach(function(b) {
-              var href = item.artifact_url || '#';
-              html += '<a href="' + href + '"><img alt="Artifact Evaluated: ' + b + '" style="margin:2px" height="18" src="../img/systexbadges-' + badgeNames[b] + '.svg"></a>';
+              html += '<img alt="Artifact Evaluated: ' + b + '" style="margin:2px" height="50" src="' + badgeImgs[b] + '">';
             });
             html += '</div>';
           }
