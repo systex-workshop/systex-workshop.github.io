@@ -120,6 +120,19 @@ var PROGRAM_DATA = [
     "format": "regular"
   },
   {
+    "type": "subtheme",
+    "title": "Attestation"
+  },
+  {
+    "type": "paper",
+    "time": "12:20 – 12:30",
+    "title": "Mind the Gap: Where TEE Attestations Fall Short and Why We Need Proof of Cloud",
+    "duration": "10 min",
+    "authors": "Filip Rezabek (Technical University of Munich), Jonathan Passerat-Palmbach (Flashbots)",
+    "pdf": "papers/systex26-paper66.pdf",
+    "format": "short"
+  },
+  {
     "type": "break",
     "time": "12:30 – 14:00",
     "title": "Lunch Break"
@@ -139,10 +152,6 @@ var PROGRAM_DATA = [
     "bio": "Antoine Delignat-Lavaud is a security researcher in Azure Research's Confidential Computing group, whose focus is to build the secure cloud of tomorrow with hardware-based trusted execution technology, ensuring that all privacy-sensitive data remains isolated, encrypted and integrity protected thorough its lifecycle. He leads efforts on protocols, platform services, and hardware design with partner silicon vendors to make confidential machine learning available to privacy-sensitive industries like health care and financial services."
   },
   {
-    "type": "subtheme",
-    "title": "Attestation"
-  },
-  {
     "type": "paper",
     "time": "14:40 – 14:50",
     "title": "On Attestation Dilution",
@@ -152,21 +161,12 @@ var PROGRAM_DATA = [
     "format": "short"
   },
   {
-    "type": "paper",
-    "time": "14:50 – 15:00",
-    "title": "Mind the Gap: Where TEE Attestations Fall Short and Why We Need Proof of Cloud",
-    "duration": "10 min",
-    "authors": "Filip Rezabek (Technical University of Munich), Jonathan Passerat-Palmbach (Flashbots)",
-    "pdf": "papers/systex26-paper66.pdf",
-    "format": "short"
-  },
-  {
     "type": "subtheme",
     "title": "Trusted Services"
   },
   {
     "type": "paper",
-    "time": "15:00 – 15:20",
+    "time": "14:50 – 15:10",
     "title": "Trusted and Transparent Time-Stamping Through TEEs and Network Time Security",
     "duration": "15 + 5 min",
     "authors": "Tobias Nießen (TU Wien), Andrew Paverd (Microsoft Security Response Center)",
