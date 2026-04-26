@@ -173,11 +173,10 @@
         } else if (item.type === 'keynote') {
           tr.className = 'row-keynote';
           var html = '<td class="time-col">' + item.time + '</td><td>';
-          html += '<b>' + item.title;
-          if (item.speaker && item.speaker !== 'TBA') html += ': ' + item.speaker;
-          html += '</b>';
+          html += '<b>' + item.title + '</b>';
+          if (item.speaker && item.speaker !== 'TBA') html += '<br><i>' + item.speaker + '</i>';
           if (item.duration) html += ' <span style="color:#888;font-size:0.85em;">(' + item.duration + ')</span>';
-          if (item.abstract) html += '<br>' + item.abstract;
+          if (item.abstract) html += '<br><b>Abstract:</b> ' + item.abstract;
           if (item.bio) html += '<br><b>Bio:</b> ' + item.bio;
           html += '</td>';
           tr.innerHTML = html;

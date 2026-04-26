@@ -12,11 +12,11 @@
   {
     "type": "keynote",
     "time": "09:10 – 09:50",
-    "title": "Keynote 1",
+    "title": "Keynote: Let's Get Physical: Low-Cost Memory Interposer Attacks and the Future of Confidential Computing",
     "duration": "30 + 10 min",
-    "speaker": "TBA",
-    "abstract": "",
-    "bio": ""
+    "speaker": "Jo Van Bulck (KU Leuven)",
+    "abstract": "Confidential computing has opened new possibilities for securing sensitive workloads in untrusted cloud and edge environments. While initial enclave platforms such as Intel SGX offered strong architectural isolation at the cost of tight memory constraints, newer confidential VM technologies, exemplified by AMD SEV and Intel TDX, promise seamless lift-and-shift deployment with vastly expanded encrypted memory. In this talk, we challenge a core assumption of today's scalable confidential computing solutions: that meaningful physical memory attacks would require expensive specialized equipment and, therefore, remain impractical in realistic threat models. We present a new class of low-cost physical memory bus interposer attacks using custom PCBs and commodity hardware, allowing privileged adversaries to silently corrupt or replay memory and mount powerful end-to-end exploits against widely deployed systems. Finally, we examine the mitigation landscape and outline challenges and opportunities for next-generation hardened confidential computing architectures.",
+    "bio": "Jo Van Bulck is a professor in the DistriNet lab at the Department of Computer Science of KU Leuven, Belgium. His research explores attacks and defenses at the hardware-software boundary, with particular attention to microarchitectural attacks and privileged side channels in trusted execution environments. Jo's research has uncovered several innovative attack vectors in commodity x86 processors that have led to firmware and silicon mitigations in hardware, as well as software patches in major operating systems and compilers."
   },
   {
     "type": "subtheme",
@@ -132,11 +132,11 @@
   {
     "type": "keynote",
     "time": "14:00 – 14:40",
-    "title": "Keynote 2",
+    "title": "Keynote: Addressing the Real-World Challenges of Confidential Computing Services",
     "duration": "30 + 10 min",
-    "speaker": "TBA",
-    "abstract": "",
-    "bio": ""
+    "speaker": "Antoine Delignat-Lavaud (Azure Research)",
+    "abstract": "Operating confidential computing services introduces new challenges beyond traditional cloud security. Clients must verify not only service identity but its attested implementation, yet distributing and validating attestation evidence at scale remains complex. Service updates require coordinated changes to attestation policies, while dependencies on other services extend the trust chain across multiple attestable components. Attestation is not in itself sufficient for establishing trust without a lot of additional evidence about how binaries are built and what they consist of. In this talk I will present some of the protocols and services we have built to make the operation of confidential computing practical for complex real-world services.",
+    "bio": "Antoine Delignat-Lavaud is a security researcher in Azure Research's Confidential Computing group, whose focus is to build the secure cloud of tomorrow with hardware-based trusted execution technology, ensuring that all privacy-sensitive data remains isolated, encrypted and integrity protected thorough its lifecycle. He leads efforts on protocols, platform services, and hardware design with partner silicon vendors to make confidential machine learning available to privacy-sensitive industries like health care and financial services."
   },
   {
     "type": "subtheme",

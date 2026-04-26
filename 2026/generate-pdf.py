@@ -84,12 +84,18 @@ for item in data:
 
     elif t == "keynote":
         speaker = item.get("speaker", "")
-        label = title
+        abstract = item.get("abstract", "")
+        bio = item.get("bio", "")
+        cell = f"<b>{title}</b>"
         if speaker and speaker != "TBA":
-            label += ": " + speaker
+            cell += f"<br/><i>{speaker}</i>"
+        if abstract:
+            cell += f"<br/><font size=7><b>Abstract:</b> {abstract}</font>"
+        if bio:
+            cell += f"<br/><font size=7><b>Bio:</b> {bio}</font>"
         table_data.append([
             Paragraph(time, time_style),
-            Paragraph(label, paper_bold),
+            Paragraph(cell, paper_style),
             Paragraph(dur, dur_style),
         ])
         row_styles.append(("keynote", KEYNOTE_BG))
